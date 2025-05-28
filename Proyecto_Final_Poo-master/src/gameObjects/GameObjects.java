@@ -38,14 +38,12 @@ public abstract class GameObjects {
 
     /**
      * Método abstracto para actualizar el estado del objeto.
-     * @param dt Delta time - tiempo transcurrido desde la última actualización
      */
     public abstract void update(float dt);
 
     /**
      * Método abstracto para dibujar el objeto en pantalla.
      * 
-     * @param g Objeto Graphics para renderizar en pantalla
      */
     public abstract void draw(Graphics g);
 

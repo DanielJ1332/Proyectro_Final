@@ -12,8 +12,7 @@ import graphics.Assets;
 import java.awt.image.BufferedImage;
 
 
-
-
+// tipos de elementos como vida,escudo,x2 puntuacion ETC
 public enum PowerUpTypes {
 	SHIELD("SHIELD", Assets.shield),
 	LIFE("+1 LIFE", Assets.life),
@@ -24,7 +23,7 @@ public enum PowerUpTypes {
 	
 	public String text;
 	public BufferedImage texture;
-	
+	//texto que sale cuando el jugador consigue un potenciador
 	private PowerUpTypes(String text, BufferedImage texture){
 		this.text = text;
 		this.texture = texture;
