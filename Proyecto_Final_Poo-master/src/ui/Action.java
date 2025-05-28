@@ -9,7 +9,7 @@ package ui;
  * @author Daniel Muñoz
  */
 public interface Action {
-	
+	//hace las acciones de powerUp etc
 	public abstract void doAction();
 	
 }
