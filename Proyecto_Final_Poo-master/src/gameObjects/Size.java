@@ -12,17 +12,24 @@ import java.awt.image.BufferedImage;
 
 import graphics.Assets;
 
+// Enumeración que representa los tamaños posibles de un meteorito o un  objeto similar
 public enum Size {
-	
-	BIG(2, Assets.meds), MED(2, Assets.smalls), SMALL(2, Assets.tinies), TINY(0, null);
-	
+
+	// Tamaños posibles, cada uno
+	BIG(2, Assets.meds),     // Meteorito grande que se divide en medianos usa texturas "meds"
+	MED(2, Assets.smalls),   // Meteorito mediano que se divide en pequeños usa texturas "smalls"
+	SMALL(2, Assets.tinies), // Meteorito pequeño que se divide en diminutos usa texturas "tinies"
+	TINY(0, null);           // Meteorito diminuto que no se divide más no tiene textura propia
+
+	// Cantidad de meteoritos que generará al dividirse
 	public int quantity;
-	
+
+	// Arreglo de texturas que se usan para representar gráficamente este tamaño
 	public BufferedImage[] textures;
-	
-	private Size(int quantity, BufferedImage[] textures){
+
+	// Constructor del enum que asigna la cantidad de divisiones y las texturas
+	private Size(int quantity, BufferedImage[] textures) {
 		this.quantity = quantity;
 		this.textures = textures;
 	}
-	
 }
