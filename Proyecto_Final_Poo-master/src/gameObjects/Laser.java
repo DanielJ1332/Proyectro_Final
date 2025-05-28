@@ -29,7 +29,7 @@ public class Laser extends MovingObject {
      * @param maxVel Velocidad máxima del láser
      * @param angle Ángulo de rotación del láser
      * @param texture Imagen que representa el láser
-     * @param gameState Estado del juego (contexto en el que se encuentra el láser)
+     * @param gameState Estado del juego  en el que se encuentra el láser
      */
     public Laser(Vector2D position, Vector2D velocity, double maxVel, double angle, BufferedImage texture, GameState gameState) {
         super(position, velocity, maxVel, texture, gameState);
@@ -40,7 +40,6 @@ public class Laser extends MovingObject {
     /**
      * Actualiza la posición del láser y verifica colisiones o límites de pantalla.
      * 
-     * @param dt Delta time (tiempo transcurrido desde el último frame)
      */
     @Override
     public void update(float dt) {
@@ -59,7 +58,6 @@ public class Laser extends MovingObject {
     /**
      * Dibuja el láser en pantalla aplicando rotación.
      * 
-     * @param g Contexto gráfico donde se dibujará el láser
      */
     @Override
     public void draw(Graphics g) {

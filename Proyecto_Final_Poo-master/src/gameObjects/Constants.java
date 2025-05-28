@@ -35,9 +35,8 @@ public class Constants {
     // Propiedades del láser
     public static final double LASER_VEL = 15.0;     // Velocidad del disparo láser
 
-    // =======================
+    
     // Propiedades del meteorito
-    // =======================
     
     public static final double METEOR_INIT_VEL = 2.0;    // Velocidad inicial del meteorito
     public static final int METEOR_SCORE = 20;           // Puntos por destruir un meteorito
@@ -55,7 +54,6 @@ public class Constants {
     public static final long UFO_SPAWN_RATE = 10000;     // Tiempo entre apariciones de OVNIs (ms)
 
     // Textos del menú y juego
-
     public static final String PLAY = "PLAY";
     public static final String EXIT = "EXIT";
     public static final String RETURN = "RETURN";
@@ -64,16 +62,14 @@ public class Constants {
     public static final String DATE = "DATE";
 
     // Configuración de interfaz
-
     public static final int LOADING_BAR_WIDTH = 500;     // Ancho de la barra de carga
     public static final int LOADING_BAR_HEIGHT = 50;     // Alto de la barra de carga
 
     // Ruta para guardar puntajes
     
     public static final String SCORE_PATH = FileSystemView.getFileSystemView()
-            .getDefaultDirectory().getPath() + "\\Space_Ship_Game\\data.json"; // Ruta al archivo JSON
+            .getDefaultDirectory().getPath() + "\\Space_Ship_Game\\data.json"; 
 
-    // Etiquetas para parser XML (si se usa)
 
     public static final String PLAYER = "PLAYER";
     public static final String PLAYERS = "PLAYERS";
